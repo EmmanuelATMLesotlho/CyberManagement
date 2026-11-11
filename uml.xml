@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" modified="2025-05-16T00:00:00.000Z" agent="5.0" etag="import" version="22.1.0" type="device">
+  <diagram name="Use Case Diagram" id="use-case-diagram">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- System Boundary -->
+        <mxCell id="boundary" value="CyberNova Platform" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="560" height="500" as="geometry"/>
+        </mxCell>
+        
+        <!-- Actor: Guest -->
+        <mxCell id="guestActor" value="Guest" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="40" height="80" as="geometry"/>
+        </mxCell>
+        
+        <!-- Actor: Admin -->
+        <mxCell id="adminActor" value="Administrator" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="250" width="40" height="80" as="geometry"/>
+        </mxCell>
+        
+        <!-- Guest Use Cases (inside boundary) -->
+        <mxCell id="ucBrowse" value="Browse Home/About" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="140" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ucBlog" value="Read Blog Articles" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="140" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ucServices" value="View Services" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="140" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ucContact" value="Submit Contact Form" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="240" width="130" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ucBooking" value="Submit Booking Request" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="240" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ucResponsive" value="View on Mobile/Desktop" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="340" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- Admin Use Cases (inside boundary) -->
+        <mxCell id="ucLogin" value="Login" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="420" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ucDashboard" value="View Dashboard" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="420" width="110" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ucManageContacts" value="Manage Contacts" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="420" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ucManageBookings" value="Manage Bookings" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="520" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ucAnalytics" value="View Analytics" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="520" width="110" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ucManageAdmins" value="Manage Admin Accounts" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="520" width="140" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- Extends/includes not needed, but simple associations -->
+        <!-- Guest to use cases -->
+        <mxCell id="line1" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="guestActor" target="ucBrowse">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="line2" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="guestActor" target="ucBlog">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="line3" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="guestActor" target="ucServices">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="line4" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="guestActor" target="ucContact">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="line5" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="guestActor" target="ucBooking">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="line6" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="guestActor" target="ucResponsive">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Admin to use cases -->
+        <mxCell id="lineA1" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="adminActor" target="ucLogin">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="lineA2" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="adminActor" target="ucDashboard">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="lineA3" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="adminActor" target="ucManageContacts">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="lineA4" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="adminActor" target="ucManageBookings">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="lineA5" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="adminActor" target="ucAnalytics">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="lineA6" style="edgeStyle=none;html=1;endArrow=open;" edge="1" parent="1" source="adminActor" target="ucManageAdmins">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
